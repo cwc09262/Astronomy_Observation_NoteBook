@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    overflow: auto;
+    /* Prevent scrolling of the body */
+    font-family: Arial, sans-serif;
+    /* Optional: Set font-family for better readability */
+}
+
+canvas {
+    position: fixed;
+    /* Position the canvas fixed in the viewport */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* Ensure canvas is below other content */
+    pointer-events: none;
+    /* Allow clicks to go through the canvas */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    /* Adjust as needed to vertically center the text */
+    left: 50%;
+    /* Center the text horizontally */
+    transform: translate(-50%, -50%);
+    /* Center the text both horizontally and vertically */
+    position: fixed;
+    color: rgba(230, 226, 9, 0.781);
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px white;
+    /* Add a shadow for better visibility */
+}
+
+.entry {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: 2;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    /* Center the content horizontally */
+    box-sizing: border-box;
+    /* This ensures that the info for the page start below the page until the user starts scrolling*/
+    margin-top: 100vh;
+    margin-bottom: 30px;
+    padding: 20px;
+    /* Optional: Add padding for better readability */
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    /* Optional: Add a semi-transparent background for better readability */
+}
+
+.entryImage{
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+.contentText {
+    padding: 25px;
+}
