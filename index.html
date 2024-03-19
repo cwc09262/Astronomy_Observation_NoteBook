@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> <!-- You can link an external CSS file if needed -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Caden's Observations</title>
 
     <canvas id="canvas"></canvas>
 </head>
+
 <body>
-    <div class="overlay-container overlay-text" id="dynamicText"><div>Caden Clements' ASTONOMICAL Observations</div>
+    <div class="overlay-container overlay-text" id="dynamicText">
+        <div>Caden Clements' ASTONOMICAL Observations</div>
     </div>
 
     <!-- Your content goes here -->
@@ -17,21 +21,76 @@
         <center>
             <h1>This is your scrolling content</h1>
         </center>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam nec eros id elementum. Nulla volutpat velit sit amet ipsum sodales, ac bibendum libero convallis. Proin a leo in lacus pretium rutrum nec vel justo. Nulla facilisi. Aliquam erat volutpat. Integer eget justo id leo cursus accumsan. Cras non nisi vel nisi fermentum laoreet. Integer at quam hendrerit, gravida arcu eget, fermentum mauris. Curabitur sit amet massa ac justo accumsan suscipit. Donec at nunc vitae purus sollicitudin fringilla. Integer sit amet sodales mi. Duis nec augue vel libero fermentum sollicitudin vitae id velit. Integer quis urna sit amet orci efficitur accumsan. Donec nec tortor feugiat, gravida justo nec, posuere eros. Maecenas quis urna vel orci pharetra faucibus vel eget justo.</p>
-        <img style="float: right;" class="entryImage" src="/images/sample.png" alt="Sample">
-        <p>Integer interdum nulla sit amet risus posuere consectetur. Donec volutpat arcu nisi, vel tempor nunc suscipit at. Duis eu bibendum sem. Mauris feugiat interdum augue nec posuere. Maecenas suscipit turpis at felis congue, at dictum tortor sagittis. In vel leo libero. Nullam tincidunt euismod erat eget scelerisque. Curabitur elementum urna magna, eu eleifend arcu mattis sit amet. Pellentesque ut nisi vel elit tempus varius. Ut et nibh quis augue ultrices laoreet.</p>
-        <p>Fusce pharetra vestibulum nulla, non condimentum lectus rhoncus at. Sed vitae leo mauris. Fusce sollicitudin odio vitae ante tincidunt, nec tincidunt libero aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean nec neque libero. Sed fringilla enim nisl, eget fermentum odio faucibus nec. In fermentum fermentum ante, a aliquet risus tincidunt ac. Aliquam vel mauris et nunc accumsan congue a a lorem. Cras nec enim arcu.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam nec eros id elementum. Nulla volutpat
+            velit sit amet ipsum sodales, ac bibendum libero convallis. Proin a leo in lacus pretium rutrum nec vel
+            justo. Nulla facilisi. Aliquam erat volutpat. Integer eget justo id leo cursus accumsan. Cras non nisi vel
+            nisi fermentum laoreet. Integer at quam hendrerit, gravida arcu eget, fermentum mauris. Curabitur sit amet
+            massa ac justo accumsan suscipit. Donec at nunc vitae purus sollicitudin fringilla. Integer sit amet sodales
+            mi. Duis nec augue vel libero fermentum sollicitudin vitae id velit. Integer quis urna sit amet orci
+            efficitur accumsan. Donec nec tortor feugiat, gravida justo nec, posuere eros. Maecenas quis urna vel orci
+            pharetra faucibus vel eget justo.</p>
+        <div class="carousel">
+                <div class="carousel-cell">
+                    <img class="entryImage" src="/images/sample.png" alt="Sample" >
+                </div>
+                <div class="carousel-cell">
+                    <img class="entryImage" src="/images/sample.png" alt="Sample" >
+                </div>
+                <div class="carousel-cell">
+                    <img class="entryImage" src="/images/sample.png" alt="Sample" >
+                </div>
+        </div>
+
+        <p>Integer interdum nulla sit amet risus posuere consectetur. Donec volutpat arcu nisi, vel tempor nunc suscipit
+            at. Duis eu bibendum sem. Mauris feugiat interdum augue nec posuere. Maecenas suscipit turpis at felis
+            congue, at dictum tortor sagittis. In vel leo libero. Nullam tincidunt euismod erat eget scelerisque.
+            Curabitur elementum urna magna, eu eleifend arcu mattis sit amet. Pellentesque ut nisi vel elit tempus
+            varius. Ut et nibh quis augue ultrices laoreet.</p>
+        <p>Fusce pharetra vestibulum nulla, non condimentum lectus rhoncus at. Sed vitae leo mauris. Fusce sollicitudin
+            odio vitae ante tincidunt, nec tincidunt libero aliquet. Pellentesque habitant morbi tristique senectus et
+            netus et malesuada fames ac turpis egestas. Aenean nec neque libero. Sed fringilla enim nisl, eget fermentum
+            odio faucibus nec. In fermentum fermentum ante, a aliquet risus tincidunt ac. Aliquam vel mauris et nunc
+            accumsan congue a a lorem. Cras nec enim arcu.</p>
     </div>
 
 
     <div class="entry">
         <h1>This is your scrolling content</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam nec eros id elementum. Nulla volutpat velit sit amet ipsum sodales, ac bibendum libero convallis. Proin a leo in lacus pretium rutrum nec vel justo. Nulla facilisi. Aliquam erat volutpat. Integer eget justo id leo cursus accumsan. Cras non nisi vel nisi fermentum laoreet. Integer at quam hendrerit, gravida arcu eget, fermentum mauris. Curabitur sit amet massa ac justo accumsan suscipit. Donec at nunc vitae purus sollicitudin fringilla. Integer sit amet sodales mi. Duis nec augue vel libero fermentum sollicitudin vitae id velit. Integer quis urna sit amet orci efficitur accumsan. Donec nec tortor feugiat, gravida justo nec, posuere eros. Maecenas quis urna vel orci pharetra faucibus vel eget justo.</p>
-        <p>Integer interdum nulla sit amet risus posuere consectetur. Donec volutpat arcu nisi, vel tempor nunc suscipit at. Duis eu bibendum sem. Mauris feugiat interdum augue nec posuere. Maecenas suscipit turpis at felis congue, at dictum tortor sagittis. In vel leo libero. Nullam tincidunt euismod erat eget scelerisque. Curabitur elementum urna magna, eu eleifend arcu mattis sit amet. Pellentesque ut nisi vel elit tempus varius. Ut et nibh quis augue ultrices laoreet.</p>
-        <p>Fusce pharetra vestibulum nulla, non condimentum lectus rhoncus at. Sed vitae leo mauris. Fusce sollicitudin odio vitae ante tincidunt, nec tincidunt libero aliquet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean nec neque libero. Sed fringilla enim nisl, eget fermentum odio faucibus nec. In fermentum fermentum ante, a aliquet risus tincidunt ac. Aliquam vel mauris et nunc accumsan congue a a lorem. Cras nec enim arcu.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam nec eros id elementum. Nulla volutpat
+            velit sit amet ipsum sodales, ac bibendum libero convallis. Proin a leo in lacus pretium rutrum nec vel
+            justo. Nulla facilisi. Aliquam erat volutpat. Integer eget justo id leo cursus accumsan. Cras non nisi vel
+            nisi fermentum laoreet. Integer at quam hendrerit, gravida arcu eget, fermentum mauris. Curabitur sit amet
+            massa ac justo accumsan suscipit. Donec at nunc vitae purus sollicitudin fringilla. Integer sit amet sodales
+            mi. Duis nec augue vel libero fermentum sollicitudin vitae id velit. Integer quis urna sit amet orci
+            efficitur accumsan. Donec nec tortor feugiat, gravida justo nec, posuere eros. Maecenas quis urna vel orci
+            pharetra faucibus vel eget justo.</p>
+        <p>Integer interdum nulla sit amet risus posuere consectetur. Donec volutpat arcu nisi, vel tempor nunc suscipit
+            at. Duis eu bibendum sem. Mauris feugiat interdum augue nec posuere. Maecenas suscipit turpis at felis
+            congue, at dictum tortor sagittis. In vel leo libero. Nullam tincidunt euismod erat eget scelerisque.
+            Curabitur elementum urna magna, eu eleifend arcu mattis sit amet. Pellentesque ut nisi vel elit tempus
+            varius. Ut et nibh quis augue ultrices laoreet.</p>
+        <p>Fusce pharetra vestibulum nulla, non condimentum lectus rhoncus at. Sed vitae leo mauris. Fusce sollicitudin
+            odio vitae ante tincidunt, nec tincidunt libero aliquet. Pellentesque habitant morbi tristique senectus et
+            netus et malesuada fames ac turpis egestas. Aenean nec neque libero. Sed fringilla enim nisl, eget fermentum
+            odio faucibus nec. In fermentum fermentum ante, a aliquet risus tincidunt ac. Aliquam vel mauris et nunc
+            accumsan congue a a lorem. Cras nec enim arcu.</p>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+
     <script>
-        function drawStars(){
+        $(document).ready(function () {
+            // Initialize Flickity carousel
+            var flkty = new Flickity('.carousel', {
+                // options
+                cellAlign: 'center',
+                contain: true,
+                wrapAround: true,
+                fullscreen: true
+            });
+        });
+
+        function drawStars() {
             var canvas = document.getElementById("canvas");
             var ctx = canvas.getContext("2d");
             var numStars = 1000;
@@ -45,7 +104,7 @@
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             // Draw bigger stars
-            for (var count = 0; count <= numStars/2; count++) {
+            for (var count = 0; count <= numStars / 2; count++) {
                 var x = Math.random() * canvas.width;
                 var y = Math.random() * canvas.height;
                 ctx.fillStyle = "lightgray";
@@ -75,10 +134,11 @@
         }
 
         // Call drawStars function when the body is loaded
-        window.onload = function() {
+        window.onload = function () {
             drawStars();
             window.scrollTo(0, 0);
         };
     </script>
 </body>
+
 </html>
