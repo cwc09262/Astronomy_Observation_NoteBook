@@ -65,15 +65,18 @@ canvas {
 
 .mySlides {display:none;}
 .slideshow-container {
+    position: relative;
   max-width: 600px; /* Adjust this value to your desired width */
   margin: auto; /* Center the container horizontally */
 }
 .caption {
   text-align: center;
   display: none; /* Hide all captions initially */
-  padding: 10px;
+  padding: 10px; 
+  margin-bottom: 10px;
   background-color: black;
   color: white;
+  border-radius: 10px;
 }
 
 img {
@@ -85,6 +88,8 @@ img {
 .custom-button{
     background-color: white;
     color: black;
+    position: absolute;
+    top: 45%;
 }
 
 /* The dots/bullets/indicators */
@@ -97,7 +102,6 @@ img {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-    padding: 10px;
   }
   
   .active, .dot:hover {
@@ -105,8 +109,8 @@ img {
   }
 .dot-container{
     text-align:center; 
-    padding: 10px;
+    padding: 8px;
     background-color: black;
     width: fit-content;
-
+    border-radius: 10px;
 }
