@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
     <title>Caden's Observations</title>
 
@@ -29,16 +29,31 @@
             mi. Duis nec augue vel libero fermentum sollicitudin vitae id velit. Integer quis urna sit amet orci
             efficitur accumsan. Donec nec tortor feugiat, gravida justo nec, posuere eros. Maecenas quis urna vel orci
             pharetra faucibus vel eget justo.</p>
-        <div class="carousel">
-                <div class="carousel-cell">
-                    <img class="entryImage" src="/images/sample.png" alt="Sample" >
-                </div>
-                <div class="carousel-cell">
-                    <img class="entryImage" src="/images/sample.png" alt="Sample" >
-                </div>
-                <div class="carousel-cell">
-                    <img class="entryImage" src="/images/sample.png" alt="Sample" >
-                </div>
+
+        <div class="w3-content w3-display-container slideshow-container">
+            <img class="mySlides" src="/images/sample.png"" style=" width:100%">
+            <div class="caption">Caption for Sample Image</div>
+
+            <img class="mySlides" src="/images/sample1.jpeg" style="width:100%">
+            <div class="caption">Caption for Lights</div>
+
+            <img class="mySlides" src="img_mountains.jpg" style="width:100%">
+            <div class="caption">Caption for Mountains</div>
+
+            <img class="mySlides" src="img_forest.jpg" style="width:100%">
+            <div class="caption">Caption for Forest</div>
+
+            <!-- Pagination dots -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
+            <button class="w3-button custom-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button custom-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
         </div>
 
         <p>Integer interdum nulla sit amet risus posuere consectetur. Donec volutpat arcu nisi, vel tempor nunc suscipit
@@ -79,17 +94,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
 
     <script>
-        $(document).ready(function () {
-            // Initialize Flickity carousel
-            var flkty = new Flickity('.carousel', {
-                // options
-                cellAlign: 'center',
-                contain: true,
-                wrapAround: true,
-                fullscreen: true
-            });
-        });
-
         function drawStars() {
             var canvas = document.getElementById("canvas");
             var ctx = canvas.getContext("2d");
@@ -138,6 +142,44 @@
             drawStars();
             window.scrollTo(0, 0);
         };
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            var captions = document.getElementsByClassName("caption");
+
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length }
+
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+                captions[i].style.display = "none";  // Hide all captions
+            }
+            x[slideIndex - 1].style.display = "block";
+            captions[slideIndex - 1].style.display = "block";  // Show caption for the current image
+
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
     </script>
 </body>
 
