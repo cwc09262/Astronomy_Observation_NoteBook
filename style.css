@@ -50,7 +50,7 @@ canvas {
     padding: 20px;
     /* Optional: Add padding for better readability */
     position: relative;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.897);
     /* Optional: Add a semi-transparent background for better readability */
 }
 
@@ -63,20 +63,28 @@ canvas {
     padding: 25px;
 }
 
-.mySlides {display:none;}
+.mySlides {
+    display: none;
+}
+
 .slideshow-container {
     position: relative;
-  max-width: 600px; /* Adjust this value to your desired width */
-  margin: auto; /* Center the container horizontally */
+    width: 100%;
+    /* Adjust this value to your desired width */
+    /* Center the container horizontally */
+    flex-grow: 1;
+    justify-self: center;
 }
+
 .caption {
-  text-align: center;
-  display: none; /* Hide all captions initially */
-  padding: 10px; 
-  margin-bottom: 10px;
-  background-color: black;
-  color: white;
-  border-radius: 10px;
+    text-align: center;
+    display: none;
+    /* Hide all captions initially */
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
 }
 
 img {
@@ -85,7 +93,7 @@ img {
     padding-bottom: 10px;
 }
 
-.custom-button{
+.custom-button {
     background-color: white;
     color: black;
     position: absolute;
@@ -102,15 +110,51 @@ img {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: yellow ;
-  }
-.dot-container{
-    text-align:center; 
+}
+
+.active,
+.dot:hover {
+    background-color: yellow;
+}
+
+.dot-container {
+    text-align: center;
     padding: 8px;
     background-color: black;
     width: fit-content;
     border-radius: 10px;
+}
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.box {
+    align-items: top;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #b3d9eb;
+}
+.FitsTitle{
+    text-decoration: underline;
+}
+
+.text{
+    margin-left: 10%;
+    margin-right:  10%;
+}
+.description{
+    font-size: 20px;
+    text-align: center;
+}
+
+.entrytitle{
+    text-decoration: underline;
+    font-size: 40px;
+    margin-bottom: 15px;
 }
