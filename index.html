@@ -16,7 +16,7 @@
         <div>Caden Clements' ASTONOMICAL Observations</div>
     </div>
 
-    <!-- Your content goes here -->
+    <!-- Crab nebula -->
     <div class="entry">
         <div class="text">
             <center>
@@ -25,34 +25,37 @@
                 </div>
             </center>
             <div class="description">
-                The crab nebulae are about 6,500 light years away from the Earth. Another name for this planetary nebula
+                The Crab Nebula are about 6,500 light years away from the Earth. Another name for this planetary nebula
                 is M1. John Bevis discovered it in 1731 and is the subject of the largest mosaic created with the Hubble
                 Telescope, over three months of work.
             </div>
             <div class="parent-container">
                 <!-- Pictures -->
                 <div class="box">
-                    <div class="w3-content w3-display-container slideshow-container">
-                        <img class="mySlides" src="/images/M1_color/m1_final color_raw.png" style=" width:100%">
+                    <div class="w3-content w3-display-container slideshow-container" id="SLideshow1">
+                        <img class="mySlides" src="/images/M1_color/m1_final color_raw.png" style="width:100%">
                         <div class="caption">Raw Image Taken With CCD Camera</div>
                         <img class="mySlides" src="/images/M1_color/m1_final color_v1.png" style="width:100%">
                         <div class="caption">M1 Image Post-Processing Version 1</div>
-                        <img class="mySlides" src="images/M1_color/m1_final color_v2.png" style="width:100%">
+                        <img class="mySlides" src="/images/M1_color/m1_final color_v2.png" style="width:100%">
                         <div class="caption">M1 Image Post-Processing Version 2</div>
-                        <img class="mySlides" src="images/M1_color/m1_final color_v3.png" style="width:100%">
+                        <img class="mySlides" src="/images/M1_color/m1_final color_v3.png" style="width:100%">
                         <div class="caption">M1 Image Post-Processing Version 3</div>
-                        <button class="w3-button custom-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                        <button class="w3-button custom-button w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                        <button class="w3-button custom-button w3-display-left"
+                            onclick="plusDivs('SLideshow1', -1)">&#10094;</button>
+                        <button class="w3-button custom-button w3-display-right"
+                            onclick="plusDivs('SLideshow1', 1)">&#10095;</button>
                         <!-- Pagination dots -->
                         <center>
                             <div class="dot-container">
-                                <span class="dot" onclick="currentSlide(1)"></span>
-                                <span class="dot" onclick="currentSlide(2)"></span>
-                                <span class="dot" onclick="currentSlide(3)"></span>
-                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide('SLideshow1', 1)"></span>
+                                <span class="dot" onclick="currentSlide('SLideshow1', 2)"></span>
+                                <span class="dot" onclick="currentSlide('SLideshow1', 3)"></span>
+                                <span class="dot" onclick="currentSlide('SLideshow1', 4)"></span>
                             </div>
                         </center>
                     </div>
+
                 </div>
                 <!-- Your box content here -->
                 <div class="box">
@@ -84,100 +87,589 @@
 
     </div>
 
+    <!-- C25-->
+    <div class="entry">
+        <div class="text">
+            <center>
+                <div class="entrytitle">
+                    Caldwell 25
+                </div>
+            </center>
+            <div class="description">
+                Caldwell 25, also known as NGC 2419, is a globular cluster located approximately 300,000 light-years
+                from Earth. It has a brightness magnitude of 10.4. This cluster was discovered by the astronomer Willi
+                Herschel on New Year’s Eve of 1788. It is significant as it is often called "the intergalactic wanderer"
+                due to its considerable distance from Earth.
+            </div>
+            <div class="parent-container">
+                <!-- Pictures -->
+                <div class="box">
+                    <div class="w3-content w3-display-container slideshow-container" id="SLideshow2">
+                        <img class="mySlides" src="/images/C25/Caldwell C25_raw.png" style="width:100%">
+                        <div class="caption">Raw Image Taken With CCD Camera</div>
+                        <img class="mySlides" src="/images/C25/Caldwell C25_pt.2.png" style="width:100%">
+                        <div class="caption">C25 Image Post-Processing</div>
+                        <button class="w3-button custom-button w3-display-left"
+                            onclick="plusDivs('SLideshow2', -1)">&#10094;</button>
+                        <button class="w3-button custom-button w3-display-right"
+                            onclick="plusDivs('SLideshow2', 1)">&#10095;</button>
+                        <!-- Pagination dots -->
+                        <center>
+                            <div class="dot-container">
+                                <span class="dot" onclick="currentSlide('SLideshow2', 1)"></span>
+                                <span class="dot" onclick="currentSlide('SLideshow2', 2)"></span>
+                            </div>
+                        </center>
+                    </div>
+
+                </div>
+                <!-- Your box content here -->
+                <div class="box">
+                    <div class="FitsTitle">
+                        <center>
+                            <strong>Picture Attributes</strong>
+                        </center>
+                    </div>
+                    <div>
+                        <strong>DATE-OBS</strong> = 2024-02-15T00:46:43.283<br>
+                        <strong>LOCALTIM</strong> = 2/14/2024 07:46:43.280 PM STD<br>
+                        <strong>OBJCTRA</strong> = 07 38 07.902<br>
+                        <strong>OBJCTDEC</strong> = +38 52 56.97<br>
+                        <strong>TELEHA</strong> = -02 16 23.50<br>
+                        <strong>LST</strong> = +05 23 23.50<br>
+                        <strong>AIRMASS</strong> = 1.11451044863015<br>
+                        <strong>EXPTIME</strong> = 30<br>
+                        <strong>FILTER</strong> = Clear<br>
+                        <strong>CCD-TEMP</strong> = -17.7996211096433<br>
+                        <strong>SITELAT</strong> = +40 03 03.33<br>
+                        <strong>SITE-LONG</strong> = +75 22 12.00<br>
+                        <strong>FOCPOS</strong> = 5900<br>
+                        <strong>FOCTEMP</strong> = 1.5<br>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- C50 -->
+    <div class="entry">
+        <div class="text">
+            <center>
+                <div class="entrytitle">
+                    Caldwell 50
+                </div>
+            </center>
+            <div class="description">
+                About 5.2 light-years away from the Earth, Caldwell 50 is an open cluster within the Monoceros
+                constellation. Its magnitude is 4.8. Sir Patrick Caldwell-Moore first cataloged Caldwell 50 in the
+                1990s.
+            </div>
+            <div class="parent-container">
+                <!-- Pictures -->
+                <div class="box">
+                    <div class="w3-content w3-display-container slideshow-container" id="SLideshow3">
+                        <img class="mySlides" src="/images/C50/C50_raw.png" style="width:100%">
+                        <div class="caption">Raw Image Taken With CCD Camera</div>
+                        <img class="mySlides" src="/images/C50/C50_pt1.png" style="width:100%">
+                        <div class="caption">C50 Image Post-Processing</div>
+                        <button class="w3-button custom-button w3-display-left"
+                            onclick="plusDivs('SLideshow3', -1)">&#10094;</button>
+                        <button class="w3-button custom-button w3-display-right"
+                            onclick="plusDivs('SLideshow3', 1)">&#10095;</button>
+                        <!-- Pagination dots -->
+                        <center>
+                            <div class="dot-container">
+                                <span class="dot" onclick="currentSlide('SLideshow3', 1)"></span>
+                                <span class="dot" onclick="currentSlide('SLideshow3', 2)"></span>
+                            </div>
+                        </center>
+                    </div>
+
+                </div>
+                <!-- Your box content here -->
+                <div class="box">
+                    <div class="FitsTitle">
+                        <center>
+                            <strong>Picture Attributes</strong>
+                        </center>
+                    </div>
+                    <div>
+                        <strong>DATE-OBS</strong> = 2024-02-15T01:38:48.406<br>
+                        <strong>LOCALTIM</strong> = 2/14/2024 08:38:48.409 PM STD<br>
+                        <strong>OBJCTRA</strong> = 06 31 59.401<br>
+                        <strong>OBJCTDEC</strong> = +04 56 16.12<br>
+                        <strong>TELEHA</strong> = -00 17 39.83<br>
+                        <strong>LST</strong> = +06 15 37.17<br>
+                        <strong>AIRMASS</strong> = 1.22612791520413<br>
+                        <strong>EXPTIME</strong> = 10<br>
+                        <strong>FILTER</strong> = Clear<br>
+                        <strong>CCD-TEMP</strong> = -18.2319950085544<br>
+                        <strong>SITELAT</strong> = +40 03 03.33<br>
+                        <strong>SITE-LONG</strong> = +75 22 12.00<br>
+                        <strong>FOCPOS</strong> = 6900<br>
+                        <strong>FOCTEMP</strong> = 4.5
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div>
+        </div>
+
+
+    </div>
+    <!-- M33 -->
+
+    <div class="entry">
+        <div class="text">
+            <center>
+                <div class="entrytitle">
+                    M33
+                </div>
+            </center>
+            <div class="description">
+                Found in the constellation Triangulum, the galaxy m33 is about 14,000 light years away from the Earth,
+                with a magnitude of 5.7 in brightness. Charles Messier was the first to catalog this galaxy in August
+                1754. Edwin Powell Hubble used it to get the distance of several other variable stars.
+            </div>
+            <div class="parent-container">
+                <!-- Pictures -->
+                <div class="box">
+                    <div class="w3-content w3-display-container slideshow-container" id="SLideshow4">
+                        <img class="mySlides" src="/images/M33/m33`_raw.jpg" style="width:100%">
+                        <div class="caption">Raw Image Taken With CCD Camera</div>
+                        <img class="mySlides" src="/images/M33/m33_pt2.png" style="width:100%">
+                        <div class="caption">M33 Image Post-Processing Version 1</div>
+                        <img class="mySlides" src="/images/M33/m33_showing how bright it gets.png" style="width:100%">
+                        <div class="caption">M33 Image Post-Processing Version 2 <br> ~Showing Galaxy's Brgihtness~
+                        </div>
+                        <button class="w3-button custom-button w3-display-left"
+                            onclick="plusDivs('SLideshow4', -1)">&#10094;</button>
+                        <button class="w3-button custom-button w3-display-right"
+                            onclick="plusDivs('SLideshow4', 1)">&#10095;</button>
+                        <!-- Pagination dots -->
+                        <center>
+                            <div class="dot-container">
+                                <span class="dot" onclick="currentSlide('SLideshow4', 1)"></span>
+                                <span class="dot" onclick="currentSlide('SLideshow4', 2)"></span>
+                                <span class="dot" onclick="currentSlide('SLideshow4', 3)"></span>
+                            </div>
+                        </center>
+                    </div>
+
+                </div>
+                <!-- Your box content here -->
+                <div class="box">
+                    <div class="FitsTitle">
+                        <center>
+                            <strong>Picture Attributes</strong>
+                        </center>
+                    </div>
+                    <div>
+                        <strong>DATE-OBS</strong> = 2024-02-15T00:10:49.313<br>
+                        <strong>LOCALTIM</strong> = 2/14/2024 07:10:49.310 PM STD<br>
+                        <strong>OBJCTRA</strong> = 01 33 39.532<br>
+                        <strong>OBJCTDEC</strong> = +30 35 51.06<br>
+                        <strong>TELEHA</strong> = +03 12 23.62<br>
+                        <strong>LST</strong> = +04 47 23.62<br>
+                        <strong>AIRMASS</strong> = 1.30172425830068<br>
+                        <strong>EXPTIME</strong> = 45<br>
+                        <strong>FILTER</strong> = Clear<br>
+                        <strong>CCD-TEMP</strong> = -17.7996211096433<br>
+                        <strong>SITELAT</strong> = +40 03 03.33<br>
+                        <strong>SITE-LONG</strong> = +75 22 12.00<br>
+                        <strong>FOCPOS</strong> = 5900<br>
+                        <strong>FOCTEMP</strong> = 3.3
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- M35 -->
+    <div class="entry">
+        <div class="text">
+            <center>
+                <div class="entrytitle">
+                    M35
+                </div>
+            </center>
+            <div class="description">
+                M35 is an open cluster located in Gemini. This cluster has a magnitude of 13; 120 of the stars are
+                brighter than this and is 2,800 lightyears away from the Earth. This cluster was first discovered by
+                Jean-Philippe Loys de Chéseaux in 1745. This cluster occupies an area roughly the size of the moon.
+            </div>
+            <div class="parent-container">
+                <!-- Pictures -->
+                <div class="box">
+                    <div class="w3-content w3-display-container slideshow-container" id="SLideshow5">
+                        <img class="mySlides" src="/images/M35/m35_raw.png" style="width:100%">
+                        <div class="caption">Raw Image Taken With CCD Camera</div>
+                        <img class="mySlides" src="/images/M35/m35.png" style="width:100%">
+                        <div class="caption">M35 Image Post-Processing</div>
+                        <button class="w3-button custom-button w3-display-left"
+                            onclick="plusDivs('SLideshow5', -1)">&#10094;</button>
+                        <button class="w3-button custom-button w3-display-right"
+                            onclick="plusDivs('SLideshow5', 1)">&#10095;</button>
+                        <!-- Pagination dots -->
+                        <center>
+                            <div class="dot-container">
+                                <span class="dot" onclick="currentSlide('SLideshow5', 1)"></span>
+                                <span class="dot" onclick="currentSlide('SLideshow5', 2)"></span>
+                            </div>
+                        </center>
+                    </div>
+
+                </div>
+                <!-- Your box content here -->
+                <div class="box">
+                    <div class="FitsTitle">
+                        <center>
+                            <strong>Picture Attributes</strong>
+                        </center>
+                    </div>
+                    <div>
+                        <strong>DATE-OBS</strong> = 2024-02-15T01:44:58.807<br>
+                        <strong>LOCALTIM</strong> = 2/14/2024 08:44:58.810 PM STD<br>
+                        <strong>OBJCTRA</strong> = 06 09 02.627<br>
+                        <strong>OBJCTDEC</strong> = +24 21 54.60<br>
+                        <strong>TELEHA</strong> = +00 11 16.59<br>
+                        <strong>LST</strong> = +06 21 48.59<br>
+                        <strong>AIRMASS</strong> = 1.03960856727175<br>
+                        <strong>EXPTIME</strong> = 10<br>
+                        <strong>FILTER</strong> = Clear<br>
+                        <strong>CCD-TEMP</strong> = -17.7996211096433<br>
+                        <strong>SITELAT</strong> = +40 03 03.33<br>
+                        <strong>SITE-LONG</strong> = +75 22 12.00<br>
+                        <strong>FOCPOS</strong> = 6900<br>
+                        <strong>FOCTEMP</strong> = 4.6
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     </div>
 
+    <!-- M43 -->
+    <div class="entry">
+        <div class="text">
+            <center>
+                <div class="entrytitle">
+                    M43
+                </div>
+            </center>
+            <div class="description">
+                M43 is a nebula in the Orion constellation, about 1,600 light years away from Earth, with an apparent
+                magnitude of 9.0. It was discovered by Jean-Jacques d’Ortous de Mairan in 1731. This cluster is also the
+                closest massive star formation to Earth.
+            </div>
+            <div class="parent-container">
+                <!-- Pictures -->
+                <div class="box">
+                    <div class="w3-content w3-display-container slideshow-container" id="SLideshow6">
+                        <img class="mySlides" src="/images/M43/m43_pt.2.png" style="width:100%">
+                        <div class="caption">M43 Image Post-Processin Version 1</div>
+                        <img class="mySlides" src="/images/M43/m43_revealing more stars.png" style="width:100%">
+                        <div class="caption">M43 Image Post-Processin Version 2 <br> ~Revealing Brightness of Galaxy~
+                        </div>
+                        <button class="w3-button custom-button w3-display-left"
+                            onclick="plusDivs('SLideshow6', -1)">&#10094;</button>
+                        <button class="w3-button custom-button w3-display-right"
+                            onclick="plusDivs('SLideshow6', 1)">&#10095;</button>
+                        <!-- Pagination dots -->
+                        <center>
+                            <div class="dot-container">
+                                <span class="dot" onclick="currentSlide('SLideshow6', 1)"></span>
+                                <span class="dot" onclick="currentSlide('SLideshow6', 2)"></span>
+                            </div>
+                        </center>
+                    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
-
-    <script>
-        function drawStars() {
-            var canvas = document.getElementById("canvas");
-            var ctx = canvas.getContext("2d");
-            var numStars = 1000;
-
-            // setting the width and height of the canvas to be full screen
-            canvas.width = window.screen.width;
-            canvas.height = window.screen.height;
-
-            // Set the background color
-            ctx.fillStyle = "black";
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            // Draw bigger stars
-            for (var count = 0; count <= numStars / 2; count++) {
-                var x = Math.random() * canvas.width;
-                var y = Math.random() * canvas.height;
-                ctx.fillStyle = "lightgray";
-                // random star size 
-                var starSize = Math.random() * 2.5;
-                ctx.fillRect(x, y, starSize, starSize);
-            }
-
-            // Draw medium stars
-            for (var count = 0; count <= numStars; count++) {
-                var x = Math.random() * canvas.width;
-                var y = Math.random() * canvas.height;
-                ctx.fillStyle = "lightgray";
-                // random star size 
-                var starSize = Math.random() * 1.5;
-                ctx.fillRect(x, y, starSize, starSize);
-            }
-
-            // Draw small stars
-            for (var count = 0; count <= numStars; count++) {
-                var x = Math.random() * canvas.width;
-                var y = Math.random() * canvas.height;
-                ctx.fillStyle = "lightgray";
-
-                ctx.fillRect(x, y, 1, 1);
-            }
-        }
-
-        // Call drawStars function when the body is loaded
-        window.onload = function () {
-            drawStars();
-            window.scrollTo(0, 0);
-        };
-
-        var slideIndex = 1;
-        showDivs(slideIndex);
-
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showDivs(slideIndex = n);
-        }
-
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            var captions = document.getElementsByClassName("caption");
-
-            if (n > x.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = x.length }
-
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-                captions[i].style.display = "none";  // Hide all captions
-            }
-            x[slideIndex - 1].style.display = "block";
-            captions[slideIndex - 1].style.display = "block";  // Show caption for the current image
+                </div>
+                <!-- Your box content here -->
+                <div class="box">
+                    <div class="FitsTitle">
+                        <center>
+                            <strong>Picture Attributes</strong>
+                        </center>
+                    </div>
+                    <div>
+                        <strong>DATE-OBS</strong> = 2024-02-15T00:37:49.279<br>
+                        <strong>LOCALTIM</strong> = 2/14/2024 07:37:49.280 PM STD<br>
+                        <strong>OBJCTRA</strong> = 05 35 35.322<br>
+                        <strong>OBJCTDEC</strong> = -05 14 17.54<br>
+                        <strong>TELEHA</strong> = -00 22 18.96<br>
+                        <strong>LST</strong> = +05 14 28.04<br>
+                        <strong>AIRMASS</strong> = 1.42835914888098<br>
+                        <strong>EXPTIME</strong> = 15<br>
+                        <strong>FILTER</strong> = Clear<br>
+                        <strong>CCD-TEMP</strong> = -17.7996211096433<br>
+                        <strong>SITELAT</strong> = +40 03 03.33<br>
+                        <strong>SITE-LONG</strong> = +75 22 12.00<br>
+                        <strong>FOCPOS</strong> = 5900<br>
+                        <strong>FOCTEMP</strong> = 1.5
 
 
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
 
-            x[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
 
-    </script>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- NGC 869 -->
+    <div class="entry">
+        <div class="text">
+            <center>
+                <div class="entrytitle">
+                    NGC869 or Caldwell 14
+                </div>
+            </center>
+            <div class="description">
+                Caldwell 14 is an open cluster located in the constellations Perseus and Cassiopeia. This cluster also
+                has the name of NGC 869. Caldwell 14 has a magnitude of 5.3 - 6.1 brightness and is 7,500 lightyears
+                away from the Earth. In the early 19th century, William Herschel recognized the object as two separate
+                clusters
+
+            </div>
+            <div class="parent-container">
+                <!-- Pictures -->
+                <div class="box">
+                    <div class="w3-content w3-display-container slideshow-container" id="SLideshow7">
+                        <img class="mySlides" src="/images/NGC 869/NGC3587_raw.png" style="width:100%">
+                        <div class="caption">Raw Image Taken With CCD Camera</div>
+                        <img class="mySlides" src="/images/NGC 869/NGC3587.png" style="width:100%">
+                        <div class="caption">M35 Image Post-Processing</div>
+                        <button class="w3-button custom-button w3-display-left"
+                            onclick="plusDivs('SLideshow7', -1)">&#10094;</button>
+                        <button class="w3-button custom-button w3-display-right"
+                            onclick="plusDivs('SLideshow7', 1)">&#10095;</button>
+                        <!-- Pagination dots -->
+                        <center>
+                            <div class="dot-container">
+                                <span class="dot" onclick="currentSlide('SLideshow7', 1)"></span>
+                                <span class="dot" onclick="currentSlide('SLideshow7', 2)"></span>
+                            </div>
+                        </center>
+                    </div>
+
+                </div>
+                <!-- Your box content here -->
+                <div class="box">
+                    <div class="FitsTitle">
+                        <center>
+                            <strong>Picture Attributes</strong>
+                        </center>
+                    </div>
+                    <div>
+                        <strong>DATE-OBS</strong> = 2024-02-15T00:26:43.344<br>
+                        <strong>LOCALTIM</strong> = 2/14/2024 07:26:43.340 PM STD<br>
+                        <strong>OBJCTRA</strong> = 02 19 10.011<br>
+                        <strong>OBJCTDEC</strong> = +57 07 44.29<br>
+                        <strong>TELEHA</strong> = +02 42 29.27<br>
+                        <strong>LST</strong> = +05 03 20.27<br>
+                        <strong>AIRMASS</strong> = 1.16889033546142<br>
+                        <strong>EXPTIME</strong> = 15<br>
+                        <strong>FILTER</strong> = Clear<br>
+                        <strong>CCD-TEMP</strong> = -17.7996211096433<br>
+                        <strong>SITELAT</strong> = +40 03 03.33<br>
+                        <strong>SITE-LONG</strong> = +75 22 12.00<br>
+                        <strong>FOCPOS</strong> = 5900<br>
+                        <strong>FOCTEMP</strong> = 4.1
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+
+        <!-- NGC 869 -->
+        <div class="entry">
+            <div class="text">
+                <center>
+                    <div class="entrytitle">
+                        NGC2903
+                    </div>
+                </center>
+                <div class="description">
+                    NGC 2903 is a Spiral Galaxy located about 20.5 million light years from the Earth and has a brightness of 8.9 magnitude. William Herschel also discovered this spiral Galaxy, which was cataloged as H I.56 on November 16, 1784.
+                </div>
+                <div class="parent-container">
+                    <!-- Pictures -->
+                    <div class="box">
+                        <div class="w3-content w3-display-container slideshow-container" id="SLideshow8">
+                            <img class="mySlides" src="/images/NGC 2903/NGC 2903_raw.jpg" style="width:100%">
+                            <div class="caption">Raw Image Taken With CCD Camera</div>
+                            <img class="mySlides" src="/images/NGC 2903/NGC2903.png" style="width:100%">
+                            <div class="caption">M35 Image Post-Processing</div>
+                            <button class="w3-button custom-button w3-display-left"
+                                onclick="plusDivs('SLideshow8', -1)">&#10094;</button>
+                            <button class="w3-button custom-button w3-display-right"
+                                onclick="plusDivs('SLideshow8', 1)">&#10095;</button>
+                            <!-- Pagination dots -->
+                            <center>
+                                <div class="dot-container">
+                                    <span class="dot" onclick="currentSlide('SLideshow8', 1)"></span>
+                                    <span class="dot" onclick="currentSlide('SLideshow8', 2)"></span>
+                                </div>
+                            </center>
+                        </div>
+
+                    </div>
+                    <!-- Your box content here -->
+                    <div class="box">
+                        <div class="FitsTitle">
+                            <center>
+                                <strong>Picture Attributes</strong>
+                            </center>
+                        </div>
+                        <div>
+                            <strong>DATE-OBS</strong> = 2024-02-15T01:04:34.784<br>
+                            <strong>LOCALTIM</strong> = 2/14/2024 08:04:34.789 PM STD<br>
+                            <strong>OBJCTRA</strong> = 09 32 10.935<br>
+                            <strong>OBJCTDEC</strong> = +21 29 56.85<br>
+                            <strong>TELEHA</strong> = -03 52 16.05<br>
+                            <strong>LST</strong> = +05 41 17.95<br>
+                            <strong>AIRMASS</strong> = 1.63474169559848<br>
+                            <strong>EXPTIME</strong> = 60<br>
+                            <strong>FILTER</strong> = Clear<br>
+                            <strong>CCD-TEMP</strong> = -17.7996211096433<br>
+                            <strong>SITELAT</strong> = +40 03 03.33<br>
+                            <strong>SITE-LONG</strong> = +75 22 12.00<br>
+                            <strong>FOCPOS</strong> = 6400<br>
+                            <strong>FOCTEMP</strong> = 1.6
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+
+
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
+
+            <script>
+                function drawStars() {
+                    var canvas = document.getElementById("canvas");
+                    var ctx = canvas.getContext("2d");
+                    var numStars = 1000;
+
+                    // setting the width and height of the canvas to be full screen
+                    canvas.width = window.screen.width;
+                    canvas.height = window.screen.height;
+
+                    // Set the background color
+                    ctx.fillStyle = "black";
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                    // Draw bigger stars
+                    for (var count = 0; count <= numStars / 2; count++) {
+                        var x = Math.random() * canvas.width;
+                        var y = Math.random() * canvas.height;
+                        ctx.fillStyle = "lightgray";
+                        // random star size 
+                        var starSize = Math.random() * 2.5;
+                        ctx.fillRect(x, y, starSize, starSize);
+                    }
+
+                    // Draw medium stars
+                    for (var count = 0; count <= numStars; count++) {
+                        var x = Math.random() * canvas.width;
+                        var y = Math.random() * canvas.height;
+                        ctx.fillStyle = "lightgray";
+                        // random star size 
+                        var starSize = Math.random() * 1.5;
+                        ctx.fillRect(x, y, starSize, starSize);
+                    }
+
+                    // Draw small stars
+                    for (var count = 0; count <= numStars; count++) {
+                        var x = Math.random() * canvas.width;
+                        var y = Math.random() * canvas.height;
+                        ctx.fillStyle = "lightgray";
+
+                        ctx.fillRect(x, y, 1, 1);
+                    }
+                }
+
+                // Call drawStars function when the body is loaded
+                window.onload = function () {
+                    drawStars();
+                    window.scrollTo(0, 0);
+                };
+
+                function initSlideshow(slideshowId) {
+                    var slideIndex = 1;
+                    showDivs(slideshowId, slideIndex);
+                }
+
+                function plusDivs(slideshowId, n) {
+                    showDivs(slideshowId, slideIndexMap[slideshowId] += n);
+                }
+
+                function currentSlide(slideshowId, n) {
+                    showDivs(slideshowId, slideIndexMap[slideshowId] = n);
+                }
+
+                function showDivs(slideshowId, n) {
+                    var slides = document.querySelectorAll("#" + slideshowId + " .mySlides");
+                    var dots = document.querySelectorAll("#" + slideshowId + " .dot");
+                    var captions = document.querySelectorAll("#" + slideshowId + " .caption");
+
+                    if (n > slides.length) { slideIndexMap[slideshowId] = 1 }
+                    if (n < 1) { slideIndexMap[slideshowId] = slides.length }
+
+                    for (var i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                        captions[i].style.display = "none"; // Hide all captions
+                    }
+                    for (var i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+
+                    slides[slideIndexMap[slideshowId] - 1].style.display = "block";
+                    captions[slideIndexMap[slideshowId] - 1].style.display = "block"; // Show caption for the current image
+                    dots[slideIndexMap[slideshowId] - 1].className += " active";
+                }
+
+                // Map to store slide indexes for each slideshow
+                var slideIndexMap = {};
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    // Initialize slideshows
+                    var slideshows = document.querySelectorAll(".slideshow-container");
+                    slideshows.forEach(function (slideshow) {
+                        var slideshowId = slideshow.id;
+                        slideIndexMap[slideshowId] = 1;
+                        initSlideshow(slideshowId);
+                    });
+                });
+
+
+            </script>
+
+            </script>
 </body>
 
 </html>
