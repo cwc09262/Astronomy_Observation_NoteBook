@@ -39,7 +39,7 @@ canvas {
     flex-direction: column;
     background-color: white;
     z-index: 2;
-    width: 85%;
+    width: 95%;
     height: auto;
     margin: 0 auto;
     /* Center the content horizontally */
@@ -128,12 +128,12 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 100%;
 }
 
 .box {
     align-items: top;
+    width: auto;
     margin: 10px;
     padding: 20px;
     border-radius: 5px;
@@ -143,6 +143,7 @@ img {
 }
 .FitsTitle{
     text-decoration: underline;
+    
 }
 
 .text{
@@ -159,3 +160,25 @@ img {
     font-size: 40px;
     margi
 }
+
+  /* Styles for the full screen icon */
+  .fullscreen-icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+    /* Styles for the text overlay */
+    .text-overlay {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        display: none; /* Hide by default */
+        z-index: 999; /* Ensure text appears above image */
+      }
