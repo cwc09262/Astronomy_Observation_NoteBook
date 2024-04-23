@@ -124,6 +124,7 @@ img {
     width: fit-content;
     border-radius: 10px;
 }
+
 .parent-container {
     display: flex;
     justify-content: center;
@@ -139,46 +140,51 @@ img {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #b3d9eb;
-    white-space: nowrap; /* Prevent text from wrapping */
-}
-.FitsTitle{
-    text-decoration: underline;
-    
+    white-space: nowrap;
+    /* Prevent text from wrapping */
 }
 
-.text{
-    margin-left: 10%;
-    margin-right:  10%;
+.FitsTitle {
+    text-decoration: underline;
+
 }
-.description{
+
+.text {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.description {
     font-size: 20px;
     text-align: center;
 }
 
-.entrytitle{
+.entrytitle {
     text-decoration: underline;
     font-size: 40px;
     margi
 }
 
-  /* Styles for the full screen icon */
-  .fullscreen-icon {
+/* Styles for the full screen icon */
+.fullscreen-icon {
     position: fixed;
     top: 10px;
     right: 10px;
     cursor: pointer;
     z-index: 1000;
-  }
+}
 
-    /* Styles for the text overlay */
-    .text-overlay {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 10px;
-        display: none; /* Hide by default */
-        z-index: 999; /* Ensure text appears above image */
-      }
+/* Styles for the text overlay */
+.text-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    display: none;
+    /* Hide by default */
+    z-index: 999;
+    /* Ensure text appears above image */
+}
