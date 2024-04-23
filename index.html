@@ -29,6 +29,10 @@
                 The Crab Nebula are about 6,500 light years away from the Earth. Another name for this planetary nebula
                 is M1. John Bevis discovered it in 1731 and is the subject of the largest mosaic created with the Hubble
                 Telescope, over three months of work.
+                <br>
+                <div class="direction">
+                    Click on the image for full-screen view, and click again to exit full-screen mode
+                </div>
             </div>
         </div>
         <div class="parent-container">
@@ -1100,7 +1104,10 @@
                 </div>
             </center>
             <div class="description">
-                DESCRIPTION GOES HERE
+                The Cigar galaxy, also known as M81, a spiral galaxy located in the constellation Ursa Major
+                approximately 11.6 million light-years away with a brightness magnitude of 6.9, was discovered by German
+                astronomer Johann Elert Bode in 1774. Notably, its bulge is significantly larger than that of the Milky
+                Way galaxy, adding to its astronomical significance.
 
             </div>
         </div>
@@ -1143,7 +1150,10 @@
                 </div>
             </center>
             <div class="description">
-                DESCRIPTION GOES HERE
+                M82, also known as the Cigar Galaxy, is a spiral galaxy situated in the constellation Ursa Major,
+                approximately 12 million light-years away. Discovered by German astronomer Johann Elert Bode in 1774,
+                its significance lies in its gravitational interactions with the neighboring galaxy M81, fostering a
+                remarkable rate of star formation recognized as a starburst.
 
             </div>
         </div>
@@ -1178,6 +1188,43 @@
 
         </div>
     </div>
+<!-- M82 -->
+<div class="entry fullscreen-con" id="fullscreenIcon">
+    <div class="text">
+        <center>
+            <div class="entrytitle">
+               Bibliography
+            </div>
+        </center>
+        <div class="description">
+            <div class="bibliography">
+                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-caldwell-catalog/caldwell-25/">Caldwell 25 - NASA Science</a></div>
+                <div class="bib-item"><a target="_blank" href="https://www.go-astronomy.com/caldwell.php?Caldwell=C50">Caldwell 50 - Go-Astronomy</a> | <a href="https://en.wikipedia.org/wiki/NGC_2244">NGC 2244 - Wikipedia</a></div>
+                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-33/">M33 - NASA Science</a></div>
+                <div class="bib-item"><a target="_blank" href="https://www.messier-objects.com/messier-35/">M35 - Messier Objects</a></div>
+                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-43/">M43 - NASA Science</a> | <a href="https://esahubble.org/images/potw1109a/">ESA Hubble</a></div>
+                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-caldwell-catalog/caldwell-14/">NGC869 - NASA Science</a></div>
+                <div class="bib-item"><a target="_blank" href="http://www.messier.seds.org/xtra/ngc/n2903.html">NGC2903 - Seds</a></div>
+                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-1/">M1 - NASA Science</a></div>
+                <div class="bib-item"><a target="_blank" href="https://earthsky.org/clusters-nebulae-galaxies/praesepe-beehive-cluster/#:~:text=Galileo%20had%20the%20first%20telescopic,44th%20object%20in%20Messier's%20catalog.">M44 - EarthSky</a> | <a href="https://starwalk.space/en/news/m44-beehive-cluster">Star Walk</a></div>
+                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-67/">M67 - NASA Science</a></div>
+                <div class="bib-item"><a target="_blank" href="https://www.eso.org/public/images/eso0525a/">NGC4565 - ESO</a> | <a href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-caldwell-catalog/caldwell-38/">NASA Science</a></div>
+                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-51/">M51 - NASA Science</a></div>
+                <div class="bib-item"><a target="_blank" href="https://www.explorescientific.com/pages/alcor-and-mizar">Mizar & Alcor - Explore Scientific</a></div>
+                <div class="bib-item"><a target="_blank" href="https://www.messier-objects.com/messier-97-owl-nebula">M97 - Messier Objects</a></div>
+                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-3/">M3 - NASA Science</a></div>
+                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-104/">M104 - NASA Science</a></div>
+                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-81/">M81 - NASA Science</a></div>
+                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-81/">M82 - NASA Science</a></div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    </div>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
@@ -1278,28 +1325,26 @@
                 initSlideshow(slideshowId);
             });
         });
-
         const fullscreenIcon = document.getElementById('fullscreenIcon');
         const images = document.querySelectorAll('img');
+        const textOverlay = document.getElementById('textOverlay');
 
         fullscreenIcon.addEventListener('click', () => {
             if (!document.fullscreenElement) {
                 document.documentElement.requestFullscreen().catch(err => {
-                    alert('Error attempting to enable full screen');
-                    console.error(err);
+                
                 });
             } else {
                 document.exitFullscreen();
             }
         });
-        
 
         // Add full-screen functionality to all images
         images.forEach(image => {
             image.addEventListener('click', () => {
                 if (!document.fullscreenElement) {
                     image.requestFullscreen().catch(err => {
-                        alert('Error attempting to enable full screen');
+                        alert('Error attempting to enable full screen: ' + err.message);
                         console.error(err);
                     });
                 } else {
@@ -1307,8 +1352,27 @@
                 }
             });
         });
-        
-        
+
+        function toggleFullscreen() {
+            const fullscreenElement = document.fullscreenElement || document.webkitFullscreenElement;
+
+            if (!fullscreenElement) {
+                const body = document.documentElement || document.body;
+                body.requestFullscreen ? body.requestFullscreen() : body.webkitRequestFullscreen();
+            } else {
+                document.exitFullscreen ? document.exitFullscreen() : document.webkitExitFullscreen();
+            }
+        }
+
+        // Show text overlay when entering full screen
+        document.addEventListener('fullscreenchange', () => {
+            if (document.fullscreenElement || document.webkitFullscreenElement) {
+                textOverlay.style.display = 'block';
+            } else {
+                textOverlay.style.display = 'none';
+            }
+        });
+
 
     </script>
 
