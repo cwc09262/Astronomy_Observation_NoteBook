@@ -8,17 +8,30 @@
     <link rel="stylesheet" href="style.css">
     <title>Caden's Observations</title>
     <canvas id="canvas"></canvas>
-    
-    <!-- Dynamic root directory based on where the website is running. -->
-       <script>
-    // Dynamically set base URL
-    if (window.location.hostname === "cwc09262.github.io") {
-      document.write('<base href="/Astronomy_Observation_NoteBook/">'); 
-    } else {
-      document.write('<base href="/">'); // local environment
-    }
 
-  </script>
+    <!-- Dynamic root directory based on where the website is running. -->
+    <script>
+        // Dynamically set base URL
+        if (window.location.hostname === "cwc09262.github.io" &&
+            window.location.pathname.startsWith("/Astronomy_Observation_NoteBook/")) {
+            document.write('<base href="/Astronomy_Observation_NoteBook/">');
+        } else {
+            document.write('<base href="/">');
+        }
+
+        console.log("DEBUG: window.location.href =", window.location.href);
+        console.log("DEBUG: window.location.hostname =", window.location.hostname);
+        console.log("DEBUG: window.location.pathname =", window.location.pathname);
+        console.log("DEBUG: window.location.origin =", window.location.origin);
+
+        // Check if <base> exists in the DOM
+        const baseTag = document.querySelector("base");
+        if (baseTag) {
+            console.log("DEBUG: <base> href =", baseTag.getAttribute("href"));
+        } else {
+            console.log("DEBUG: No <base> tag found in DOM yet.");
+        }
+    </script>
 </head>
 
 <body>
@@ -1198,43 +1211,78 @@
 
         </div>
     </div>
-<!-- M82 -->
-<div class="entry fullscreen-con" id="fullscreenIcon">
-    <div class="text">
-        <center>
-            <div class="entrytitle">
-               Bibliography
-            </div>
-        </center>
-        <div class="description">
-            <div class="bibliography">
-                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-caldwell-catalog/caldwell-25/">Caldwell 25 - NASA Science</a></div>
-                <div class="bib-item"><a target="_blank" href="https://www.go-astronomy.com/caldwell.php?Caldwell=C50">Caldwell 50 - Go-Astronomy</a> | <a href="https://en.wikipedia.org/wiki/NGC_2244">NGC 2244 - Wikipedia</a></div>
-                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-33/">M33 - NASA Science</a></div>
-                <div class="bib-item"><a target="_blank" href="https://www.messier-objects.com/messier-35/">M35 - Messier Objects</a></div>
-                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-43/">M43 - NASA Science</a> | <a href="https://esahubble.org/images/potw1109a/">ESA Hubble</a></div>
-                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-caldwell-catalog/caldwell-14/">NGC869 - NASA Science</a></div>
-                <div class="bib-item"><a target="_blank" href="http://www.messier.seds.org/xtra/ngc/n2903.html">NGC2903 - Seds</a></div>
-                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-1/">M1 - NASA Science</a></div>
-                <div class="bib-item"><a target="_blank" href="https://earthsky.org/clusters-nebulae-galaxies/praesepe-beehive-cluster/#:~:text=Galileo%20had%20the%20first%20telescopic,44th%20object%20in%20Messier's%20catalog.">M44 - EarthSky</a> | <a href="https://starwalk.space/en/news/m44-beehive-cluster">Star Walk</a></div>
-                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-67/">M67 - NASA Science</a></div>
-                <div class="bib-item"><a target="_blank" href="https://www.eso.org/public/images/eso0525a/">NGC4565 - ESO</a> | <a href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-caldwell-catalog/caldwell-38/">NASA Science</a></div>
-                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-51/">M51 - NASA Science</a></div>
-                <div class="bib-item"><a target="_blank" href="https://www.explorescientific.com/pages/alcor-and-mizar">Mizar & Alcor - Explore Scientific</a></div>
-                <div class="bib-item"><a target="_blank" href="https://www.messier-objects.com/messier-97-owl-nebula">M97 - Messier Objects</a></div>
-                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-3/">M3 - NASA Science</a></div>
-                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-104/">M104 - NASA Science</a></div>
-                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-81/">M81 - NASA Science</a></div>
-                <div class="bib-item"><a target="_blank" href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-81/">M82 - NASA Science</a></div>
-            </div>
+    <!-- M82 -->
+    <div class="entry fullscreen-con" id="fullscreenIcon">
+        <div class="text">
+            <center>
+                <div class="entrytitle">
+                    Bibliography
+                </div>
+            </center>
+            <div class="description">
+                <div class="bibliography">
+                    <div class="bib-item"><a target="_blank"
+                            href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-caldwell-catalog/caldwell-25/">Caldwell
+                            25 - NASA Science</a></div>
+                    <div class="bib-item"><a target="_blank"
+                            href="https://www.go-astronomy.com/caldwell.php?Caldwell=C50">Caldwell 50 - Go-Astronomy</a>
+                        | <a href="https://en.wikipedia.org/wiki/NGC_2244">NGC 2244 - Wikipedia</a></div>
+                    <div class="bib-item"><a target="_blank"
+                            href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-33/">M33
+                            - NASA Science</a></div>
+                    <div class="bib-item"><a target="_blank" href="https://www.messier-objects.com/messier-35/">M35 -
+                            Messier Objects</a></div>
+                    <div class="bib-item"><a target="_blank"
+                            href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-43/">M43
+                            - NASA Science</a> | <a href="https://esahubble.org/images/potw1109a/">ESA Hubble</a></div>
+                    <div class="bib-item"><a target="_blank"
+                            href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-caldwell-catalog/caldwell-14/">NGC869
+                            - NASA Science</a></div>
+                    <div class="bib-item"><a target="_blank"
+                            href="http://www.messier.seds.org/xtra/ngc/n2903.html">NGC2903 - Seds</a></div>
+                    <div class="bib-item"><a target="_blank"
+                            href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-1/">M1
+                            - NASA Science</a></div>
+                    <div class="bib-item"><a target="_blank"
+                            href="https://earthsky.org/clusters-nebulae-galaxies/praesepe-beehive-cluster/#:~:text=Galileo%20had%20the%20first%20telescopic,44th%20object%20in%20Messier's%20catalog.">M44
+                            - EarthSky</a> | <a href="https://starwalk.space/en/news/m44-beehive-cluster">Star Walk</a>
+                    </div>
+                    <div class="bib-item"><a target="_blank"
+                            href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-67/">M67
+                            - NASA Science</a></div>
+                    <div class="bib-item"><a target="_blank" href="https://www.eso.org/public/images/eso0525a/">NGC4565
+                            - ESO</a> | <a
+                            href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-caldwell-catalog/caldwell-38/">NASA
+                            Science</a></div>
+                    <div class="bib-item"><a target="_blank"
+                            href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-51/">M51
+                            - NASA Science</a></div>
+                    <div class="bib-item"><a target="_blank"
+                            href="https://www.explorescientific.com/pages/alcor-and-mizar">Mizar & Alcor - Explore
+                            Scientific</a></div>
+                    <div class="bib-item"><a target="_blank"
+                            href="https://www.messier-objects.com/messier-97-owl-nebula">M97 - Messier Objects</a></div>
+                    <div class="bib-item"><a target="_blank"
+                            href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-3/">M3
+                            - NASA Science</a></div>
+                    <div class="bib-item"><a target="_blank"
+                            href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-104/">M104
+                            - NASA Science</a></div>
+                    <div class="bib-item"><a target="_blank"
+                            href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-81/">M81
+                            - NASA Science</a></div>
+                    <div class="bib-item"><a target="_blank"
+                            href="https://science.nasa.gov/mission/hubble/science/explore-the-night-sky/hubble-messier-catalog/messier-81/">M82
+                            - NASA Science</a></div>
+                </div>
 
+            </div>
         </div>
-    </div>
 
-    
+
 
     </div>
-</div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.2/flickity.pkgd.min.js"></script>
@@ -1342,7 +1390,7 @@
         fullscreenIcon.addEventListener('click', () => {
             if (!document.fullscreenElement) {
                 document.documentElement.requestFullscreen().catch(err => {
-                
+
                 });
             } else {
                 document.exitFullscreen();
