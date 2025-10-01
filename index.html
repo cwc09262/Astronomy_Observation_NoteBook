@@ -7,8 +7,18 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="style.css">
     <title>Caden's Observations</title>
-
     <canvas id="canvas"></canvas>
+    
+    <!-- Dynamic root directory based on where the website is running. -->
+       <script>
+    // Dynamically set base URL
+    if (window.location.hostname === "cwc09262.github.io") {
+      document.write('<base href="/Astronomy_Observation_NoteBook/">'); 
+    } else {
+      document.write('<base href="/">'); // local environment
+    }
+
+  </script>
 </head>
 
 <body>
